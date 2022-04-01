@@ -9,10 +9,8 @@ const pageController = new PageController()
 const deliveryController = new DeliveryController()
 
 // Routes
-router.get('/', pageController.renderHome)
-
-router.get('/delivery-form', deliveryController.renderDeliveryForm)
-router.post('/delivery-form', deliveryController.renderDispatchPrice)
+router.get('/', deliveryController.renderDeliveryForm)
+router.post('/', deliveryController.renderDispatchPrice)
 
 router.get('*', pageController.renderNotFound)
 
