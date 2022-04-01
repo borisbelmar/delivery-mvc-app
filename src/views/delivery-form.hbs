@@ -1,0 +1,19 @@
+<h1>Ingresa la cantidad de productos</h1>
+
+<form action="/delivery-form" method="POST">
+  <div>
+    <label>Cantidad de artículos</label>
+    <input type="number" required="true" name="articlesQty" placeholder="0">
+  </div>
+  <div>
+    <label>Zona a la que se envía</label>
+    <select name="zone">
+      <option value="north" selected>Norte</option>
+      <option value="center">Centro</option>
+      <option value="south">Sur</option>
+    </select>
+  </div>
+  <button type="submit">
+    Calcular
+  </button>
+</form>
